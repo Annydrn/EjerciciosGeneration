@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* CREACION VARIABLES DE ESTILO */
+:root{
+
+    --colorDeFondo:#eee3cb;
+    --colorSuperpuesto:#c5d2dd;
+    --colorBordes:#808bb1;
+    --colorTexto:#4b4949;
+    --colorEncabezados:#edd7aa;
+    --degradeBarras: linear-gradient(90deg, rgba(128,139,177,1) 20%, rgba(237,215,170,1) 100%);}
+
+
+p{
+    color: var(--colorTexto);
+}
+body {
+  background-image: linear-gradient(#a59f98, #fffbe9);
+  height: 170vh;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: "Montserrat";
+}
+
+
+.main {
+  background-color: var(--colorDeFondo);
+  height: auto;
+  width: 800px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  
+}
+
+.left {
+  background-color: var(--colorSuperpuesto);
+  width: 290px;
+  height: 100%;
+  float: left;
+  padding: 30px;
+  padding-bottom: 40px;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  border: 3px solid var(--colorBordes);
+  box-shadow: 6px 4px 28px 10px var(--colorTexto);
+}
+
+.phone .email {
+  padding-top: 10px;
+  font-size: 20px;
+}
+.photo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.box1 {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.head {
+  background-color: var(--colorEncabezados);
+  padding: 10px;
+  color: var(--colorTexto);
+  text-align: left;
+  padding-left: 28px;
+  margin-right: -15px;
+  border-radius: 15px;
+}
+
+.skills {
+  padding: 5px 0px;
+  font-size: 20px;
+}
+
+.skill-container {
+  width: 100%;
+  height: 20px;
+  background-color: var(--colorEncabezados);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.skill-html {
+  width: 90%;
+  height: 100%;
+  background: var(--degradeBarras);
+}
+
+.skill-css {
+  width: 70%;
+  height: 100%;
+  background: var(--degradeBarras);
+}
+
+.skill-js {
+  width: 40%;
+  height: 100%;
+  background: var(--degradeBarras);
+}
+
+.skill-java {
+  width: 10%;
+  height: 100%;
+  background: var(--degradeBarras);
+}
+
+.skill-creatividad {
+  width: 100%;
+  height: 100%;
+  background: var(--degradeBarras);
+}
+
+.skill-equipo {
+  width: 100%;
+  height: 100%;
+  background: var(--degradeBarras);
+ }
+
+.box-name {
+    padding: 50px 0px 10px  ;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.box-name h1 {
+    margin-bottom: 10px;
+}
+
+.box-3{
+    padding:0px 100px ;
+    margin-top: 30px;
+    text-align:center;
+}
+
+.img-git{
+overflow: hidden;    width: 70px;
+    height: 70px;}
+
+    .contenedor-redes{
+display:inline-flex  box-sizing: ; /* Considerar el margen y el borde dentro del ancho y alto */
+  margin-right: 10px;
+    }

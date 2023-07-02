@@ -1,0 +1,22 @@
+fieldset{ 
+    width: 600px;
+}
+
+.cajaTexto{
+    padding: 8px;
+}
+
+.btnAñadir{
+    background-color: rgb(4, 76, 221);
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 8px;
+    
+}
+
+.btnBorrar{
+    background-color: rgb(221, 29, 4);
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 8px;
+}

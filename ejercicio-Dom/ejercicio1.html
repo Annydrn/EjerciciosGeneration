@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+  </head> 
+  <style>
+    #text{
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: black;
+    }
+  </style>
+  <body>
+    <p id="text">JavaScript Exercises #1</p> 
+    <div>
+<script>
+  function js_style(){
+    const cambio= document.getElementById("text");
+    cambio.style.fontFamily="Georgia, 'Times New Roman', Times, serif";
+    cambio.style.fontSize= "25px";
+    cambio.style.color="green"
+  }
+
+</script>
+      <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <fieldset>
+        <h1>Lista de Tareas</h1>
+        <input id="cajaTexto" type="text" placeholder="Agrega una tarea...">
+        <input class="btnAñadir" type="submit" value="Añadir" onclick="agregarTarea()">
+        <input class="btnBorrar" type="submit" value="Borrar Lista" onclick="borrarLista()">
+    </fieldset>
+    <ul id="listaTareas"></ul>
+
+    <script>
+        // Función para añadir una tarea a la lista
+        function agregarTarea() {
+            var tarea = document.getElementById("cajaTexto").value;
+            var listaTareas = document.getElementById("listaTareas");
+            var nuevaTarea = document.createElement("li");
+            nuevaTarea.textContent = tarea;
+            listaTareas.appendChild(nuevaTarea);
+            document.getElementById("cajaTexto").value = "";
+        }
+
+        // Función para borrar la lista de tareas
+        function borrarLista() {
+            var listaTareas = document.getElementById("listaTareas");
+            listaTareas.innerHTML = "";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(231, 228, 226, 0.884);
+}
+
+.contenedor-productos{
+display: grid;  
+gap: 1rem;
+grid-auto-rows: 30rem;  
+grid-template-columns: repeat(auto-fit, minmax(15rem,2fr));
+}
+
+.menu{
+    display: none;
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    border: 2px solid black;
+
+}
+.menu:hover{
+    display: block;
+}
+ /*crear addevelistener con js  para cambiar el estado de menu, probar con alert primero*/ 
+.titulo{
+    background: linear-gradient(90deg, rgba(98,31,70,1) 20%, rgba(226,72,90,1) 100%);    text-align: center;
+}
+
+
+.Card{
+    width: 250px;
+    height: 470px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    
+}
+
+.contenedor-imagen{
+width: 250px;
+height: auto;
+}
+.img-producto{
+    width: 100%;
+    height: 240px; 
+    object-fit: cover;
+}
+
+.informacion-producto{
+    margin: 18px;
+    width: 100%;
+    height: 50px;
+
+}
+.contenedor-stars{
+width: 100px;
+height: 40px;
+}
+
+.stars{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height:100% ;
+}
+
+.precio-anterior{
+    text-decoration: line-through;
+}
+.precio-oferta{
+margin-left: 70%;
+}
+
+.boton-agregar{
+    color: aliceblue;
+position: absolute; 
+background-color: rgb(26, 162, 186);
+padding: 4px 20px 4px 20px;
+border: none;
+border-radius: 3px;
+
+}
+

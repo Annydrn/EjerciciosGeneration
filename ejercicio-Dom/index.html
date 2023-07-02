@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Llamar y rellenar cajetines de texto" />
+    <meta name="author" content="Francesc Ricart" />
+    <title>Ejercicio javascript - Instrucciones básicas DOM</title>
+  </head>
+  <body>
+    <form action="#saludo">
+      <label for="nombre">Nombre:</label><input type="text" id="nombre" />
+      <label for="apellido">Apellido:</label><input type="text" id="apellido" />
+      <input type="submit" value="Rellenar datos" onclick="enviarSaludo()" />
+    </form>
+
+    <p id="saludo"></p>
+
+    <script>
+      //use getElementById para traer la informacion con el id asignado en html
+      //debo colocar el .value para que se lea la informacion que coloque en los input
+      //en saludo coloque los template string para dar la frase final
+      // al final de la funcion coloque innerHtml para que se muestre la frase saludo
+      function enviarSaludo() {
+        const nombre = document.getElementById("nombre").value;
+        const apellido = document.getElementById("apellido").value;
+        const saludo = `Hola ${nombre} ${apellido}, gracias por rellenar el formulario`;
+        document.getElementById("saludo").innerHTML = saludo;
+      }
+    </script>
+  </body>
+</html>
